@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DasqPrints | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">DasqPrints</div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="pegandplay.html">Peg & Play</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Portfolio</h1>
+    <p>Custom gifts, invitations, and party decor — visit my <a href="https://www.zazzle.com/store/dasqprints" target="_blank">Zazzle store</a> to see more.</p>
+
+    <div class="portfolio-grid">
+      <img src="images/sample1.jpg" alt="Sample 1">
+      <img src="images/sample2.jpg" alt="Sample 2">
+      <img src="images/sample3.jpg" alt="Sample 3">
+      <img src="images/sample4.jpg" alt="Sample 4">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 DasqPrints. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
