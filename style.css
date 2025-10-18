@@ -1,0 +1,141 @@
+/* ===== DASQPRINTS - STYLE.CSS ===== */
+
+/* --- Variables de color --- */
+:root {
+  --color-primary: #F72585;
+  --color-secondary: #4CC9F0;
+  --color-accent: #7209B7;
+  --color-highlight: #F9C74F;
+  --color-bg: #F7F7F7;
+  --color-dark: #222;
+  --color-light: #fff;
+}
+
+/* --- Reset & base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+header {
+  background: var(--color-light);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-accent);
+}
+
+/* --- Menú móvil --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: var(--color-light);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    border-top: 1px solid #eee;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* --- Secciones generales --- */
+main {
+  max-width: 1100px;
+  margin: 6rem auto 3rem;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* --- Portfolio grid --- */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--color-light);
+  color: var(--color-dark);
+  border-top: 1px solid #eee;
+}
