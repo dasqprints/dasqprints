@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peg & Play | DasqPrints</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">DasqPrints</div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="pegandplay.html" class="active">Peg & Play</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Peg & Play Collection</h1>
+    <p>Explore our educational kits and creative sets — available on <a href="https://www.etsy.com/shop/yourshopname" target="_blank">Etsy</a>.</p>
+
+    <div class="portfolio-grid">
+      <img src="images/peg1.jpg" alt="Peg & Play 1">
+      <img src="images/peg2.jpg" alt="Peg & Play 2">
+      <img src="images/peg3.jpg" alt="Peg & Play 3">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 DasqPrints. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
