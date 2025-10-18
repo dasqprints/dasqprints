@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | DasqPrints</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">DasqPrints</div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="pegandplay.html">Peg & Play</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>About DasqPrints</h1>
+    <p>Welcome! I'm the designer behind DasqPrints — where creativity meets joy.  
+    From custom invitations and party decor to playful educational kits, I love helping others celebrate and create with style.</p>
+
+    <p>Every project is a mix of fun, color, and design made with love.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 DasqPrints. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
