@@ -1,1 +1,70 @@
-/* Blush + Poppins styling */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f9e7e7;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #d17c7c;
+}
+
+.hero {
+  text-align: center;
+  padding: 10rem 2rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+button {
+  background-color: #d17c7c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b56565;
+}
+
+.message {
+  display: none;
+  color: #d17c7c;
+  margin-top: 1rem;
+}

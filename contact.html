@@ -1,1 +1,40 @@
-<!-- Contact Form Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - dasqprints</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showMessage(event) {
+      event.preventDefault();
+      document.getElementById('thankyou').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>dasqprints</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="custom.html">Custom Invitations</a>
+      <a href="pegandplay.html">Peg & Play</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Contact</h2>
+    <form onsubmit="showMessage(event)">
+      <p><input type="text" placeholder="Your Name" required></p>
+      <p><input type="email" placeholder="Your Email" required></p>
+      <p><textarea placeholder="Your Message" rows="5" required></textarea></p>
+      <p><button type="submit">Send Message</button></p>
+      <p id="thankyou" class="message">Thank you! Your message was sent.</p>
+    </form>
+  </div>
+  <footer>© 2025 dasqprints — All rights reserved</footer>
+</body>
+</html>
