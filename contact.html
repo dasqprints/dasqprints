@@ -1,86 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | DasqPrints</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - dasqprints</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showMessage(event) {
+      event.preventDefault();
+      document.getElementById('thankyou').style.display = 'block';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <div class="nav-container">
-      <div class="logo">DasqPrints</div>
-      <div class="menu-toggle" id="mobile-menu">☰</div>
-      <nav>
-        <ul id="nav-links">
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="pegandplay.html">Peg & Play</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>dasqprints</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="custom.html">Custom Invitations</a>
+      <a href="pegandplay.html">Peg & Play</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-
-  <main>
-    <h1>Contact</h1>
-    <p>Have a question or collaboration in mind? Send a message — I'd love to hear from you!</p>
-
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <label>Name</label>
-      <input type="text" name="name" required />
-
-      <label>Email</label>
-      <input type="email" name="email" required />
-
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
-
-      <button type="submit">Send</button>
+  <div class="container">
+    <h2>Contact</h2>
+    <form onsubmit="showMessage(event)">
+      <p><input type="text" placeholder="Your Name" required></p>
+      <p><input type="email" placeholder="Your Email" required></p>
+      <p><textarea placeholder="Your Message" rows="5" required></textarea></p>
+      <p><button type="submit">Send Message</button></p>
+      <p id="thankyou" class="message">Thank you! Your message was sent.</p>
     </form>
-  </main>
-
-  <footer>
-    <p>© 2025 DasqPrints. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const menu = document.getElementById('mobile-menu');
-    const navLinks = document.getElementById('nav-links');
-    menu.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script>
-
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 500px;
-    }
-
-    input, textarea {
-      padding: 0.7rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    button {
-      background: var(--color-primary);
-      color: white;
-      border: none;
-      padding: 0.8rem;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: var(--color-accent);
-    }
-  </style>
+  </div>
+  <footer>© 2025 dasqprints — All rights reserved</footer>
 </body>
 </html>
